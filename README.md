@@ -21,14 +21,10 @@ The following are queries that can be used or serve as an example when filtering
 | 2000              | ANY            | "Exchange 2000"                                                   |
 | 5.5               | ANY            | "Exchange 5.5"                                                    |
 
-# IIS / OS
+# Misc
 
-| IIS         | OS             | FILTER                                                     |
-| ----------- | -------------- | ---------------------------------------------------------- |
-| 6.0         | WS2003         | Server: "Microsoft-IIS/6.0"                                |
-| 7.0	        | WS2008	       | Server: "Microsoft-IIS/7.0"                                |
-| 7.5	        | WS2008R2	     | Server: "Microsoft-IIS/7.5"                                |
-| 8.0         | WS2012         | Server: "Microsoft-IIS/8.0"                                |
-| 8.5         | WS2012R2       | Server: "Microsoft-IIS/8.5"                                |
-| 10.0        | WS2016-WS2025  | Server: "Microsoft-IIS/10.0"|
+| Service                            | FILTER                                                            |
+| ---------------------------------- | ----------------------------------------------------------------- |
+| Zimbra Webmail                     | "Set-Cookie: ZM_LOGIN_CSRF"                                                                   |
+| Zarafa Webmail                     | "Set-Cookie: ZARAFA_WEBACCESS"                                    |
 
