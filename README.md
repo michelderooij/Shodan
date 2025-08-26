@@ -17,7 +17,9 @@ The following are queries that can be used or serve as an example when filtering
 | ANY               | Autodiscover   | hostname:autodiscover X-OWA-Version:                              |
 | ANY               | HTTP + TLSv1.3 | Microsoft Exchange: ssl.version:tlsv1.3 HTTP                      |
 | ANY               | SMTP           | Product:Exchange port:25,465,587                                  |
-| 2003              | ANY            | Exchange 2003                                                     |
+| 2003              | ANY            | "Exchange 2003"                                                   |
+| 2000              | ANY            | "Exchange 2000"                                                   |
+| 5.5               | ANY            | "Exchange 5.5"                                                    |
 
 # IIS / OS
 
