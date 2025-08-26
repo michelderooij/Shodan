@@ -2,22 +2,22 @@ The following are queries that can be used or serve as an example when filtering
 
 # Exchange
 
-| EXCHANGE          | PROTOCOL       | FILTER                                                  |
-| ----------------- | -------------- | ------------------------------------------------------- |
-| ANY               | ANY            | Microsoft Exchange:                                     |
-| ANY               | OWA            | "X-OWA-Version" -"http.status: 302"                     |  
-| 2007              | OWA            | "X-OWA-Version: 8." -"http.status: 302"                 |
-| 2010              | OWA            | "X-OWA-Version: 14." -"http.status: 302"                |
-| 2013              | OWA            | "X-OWA-Version: 15.0." -"http.status: 302"              |
-| 2016              | OWA            | "X-OWA-Version: 15.1." -"http.status: 302"              |
-| 2019              | OWA            | "X-OWA-Version: 15.2." -"15.2.2562" -"http.status: 302" |
-| SE                | OWA            | "X-OWA-Version: 15.2.2562"                              |
-| ANY               | IMAP4          | product:exchange port:143,993                           |
-| ANY               | POP3           | product:exchange port:110,995                           |
-| ANY               | Autodiscover   | hostname:autodiscover X-OWA-Version:                    |
-| ANY               | HTTP + TLSv1.3 | Microsoft Exchange: ssl.version:tlsv1.3 HTTP            |
-| ANY               | SMTP           | Product:Exchange port:25,465,587                        |
-| 2003              | ANY            | Exchange 2003                                           |
+| EXCHANGE          | PROTOCOL       | FILTER                                                            |
+| ----------------- | -------------- | ----------------------------------------------------------------- |
+| ANY               | ANY            | Microsoft Exchange:                                               |
+| ANY               | OWA            | "X-OWA-Version" -http.status:302                                  |  
+| 2007              | OWA            | "X-OWA-Version:8." -http.status:302                               |
+| 2010              | OWA            | "X-OWA-Version:14." -http.status:302                              |
+| 2013              | OWA            | "X-OWA-Version:15.0." -http.status:302                            |
+| 2016              | OWA            | "X-OWA-Version:15.1." -http.status:302                            |
+| 2019              | OWA            | "X-OWA-Version:15.2." -"X-OWA-Version:15.2.2562" -http.status:302 |
+| SE                | OWA            | "X-OWA-Version:15.2.2562"                                         |
+| ANY               | IMAP4          | product:exchange port:143,993                                     |
+| ANY               | POP3           | product:exchange port:110,995                                     |
+| ANY               | Autodiscover   | hostname:autodiscover X-OWA-Version:                              |
+| ANY               | HTTP + TLSv1.3 | Microsoft Exchange: ssl.version:tlsv1.3 HTTP                      |
+| ANY               | SMTP           | Product:Exchange port:25,465,587                                  |
+| 2003              | ANY            | Exchange 2003                                                     |
 
 # IIS / OS
 
